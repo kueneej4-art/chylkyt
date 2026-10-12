@@ -1,0 +1,1047 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- временный адрес: не индексировать, чтобы не было дубля с чылкыт.рф -->
+<meta name="robots" content="noindex, nofollow">
+<title>ЧЫЛКЫТ — клининг для бизнеса в Ижевске</title>
+<meta name="description" content="Клининг производств, складов, клиник и офисов в Ижевске и Удмуртии. Собственный штат, договор, фотоотчёт. Смета после осмотра объекта.">
+<link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --bg:#F3F6F5; --surface:#FFFFFF; --soft:#E3EEEA; --line:#CFDCD7;
+  --ink:#14201E; --muted:#56655F; --accent:#1F5E55; --accent-ink:#FFFFFF;
+  --accent-soft:#D3E7E1; --ph-bg:#FFF4C9; --ph-line:#C9A227; --ph-ink:#5A4608;
+  --grime:#8C8A7C;
+  --display:"Unbounded", "Arial Black", system-ui, sans-serif;
+  --body:"Manrope", "Segoe UI", system-ui, sans-serif;
+  --mono:"JetBrains Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#0E1513; --surface:#15201D; --soft:#1B2A26; --line:#2A3B36;
+    --ink:#E4EEEA; --muted:#9DB0A9; --accent:#6FC2B0; --accent-ink:#0B1311;
+    --accent-soft:#1F3A34; --ph-bg:#3A3212; --ph-line:#C9A227; --ph-ink:#F4DE8A;
+    --grime:#5E5C52;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0E1513; --surface:#15201D; --soft:#1B2A26; --line:#2A3B36;
+  --ink:#E4EEEA; --muted:#9DB0A9; --accent:#6FC2B0; --accent-ink:#0B1311;
+  --accent-soft:#1F3A34; --ph-bg:#3A3212; --ph-line:#C9A227; --ph-ink:#F4DE8A;
+  --grime:#5E5C52;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{background:var(--bg);color:var(--ink);font:16px/1.6 var(--body);padding-inline:16px}
+.wrap{max-width:1160px;margin-inline:auto}
+h1,h2,h3{font-family:var(--display);font-weight:500;line-height:1.15;text-wrap:balance;margin:0}
+h1{font-size:clamp(30px,5.4vw,58px);letter-spacing:-.01em}
+h2{font-size:clamp(24px,3.2vw,36px)}
+h3{font-size:18px}
+p{margin:0}
+a{color:inherit}
+.eyebrow{font:500 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.muted{color:var(--muted)}
+section{padding-block:72px}
+.sec-head{display:grid;gap:12px;margin-bottom:36px;max-width:680px}
+
+/* placeholders */
+.ph{}
+.img-ph{position:relative;border-radius:14px;overflow:hidden;background:
+  repeating-linear-gradient(135deg,transparent 0 14px,color-mix(in srgb,var(--accent) 7%,transparent) 14px 15px),var(--soft);
+  display:flex;align-items:flex-end;min-height:180px;max-width:100%}
+.img-ph span{display:none}
+.ok-note{display:grid;gap:8px}
+.ok-note a{font-weight:600}
+
+/* demo bar */
+.demobar{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;justify-content:space-between;background:var(--ph-bg);color:var(--ph-ink);font-size:13px;padding:10px 16px;border-radius:0 0 12px 12px;max-width:1160px;margin-inline:auto}
+.demobar button{font:600 12px var(--body);background:transparent;color:inherit;border:1px solid var(--ph-line);border-radius:999px;padding:5px 12px;cursor:pointer}
+
+/* header */
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);margin-inline:-16px;padding-inline:16px}
+.top-in{display:flex;align-items:center;gap:20px;padding-block:14px;max-width:1160px;margin-inline:auto;flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:10px;font:600 15px/1.1 var(--display);text-decoration:none}
+.logo-mark{width:34px;height:34px;border-radius:50%;border:1.5px solid var(--accent);display:grid;place-items:center;color:var(--accent);flex:none}
+.nav{display:flex;gap:18px;font-size:14px;margin-left:auto;flex-wrap:wrap}
+.nav a{text-decoration:none;color:var(--muted)}
+.nav a:hover{color:var(--ink)}
+.phone{font:500 15px var(--mono);white-space:nowrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:600 15px var(--body);background:var(--accent);color:var(--accent-ink);border:0;border-radius:999px;padding:13px 24px;text-decoration:none;cursor:pointer;transition:transform .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+:focus-visible{outline:2.5px solid var(--accent);outline-offset:3px}
+
+/* hero */
+.hero{overflow-x:clip;padding-block:56px 40px;display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+.hero-copy{display:grid;gap:22px}
+.hero-copy .lead{font-size:18px;color:var(--muted);max-width:52ch}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:500 12px var(--mono);border:1px solid var(--line);border-radius:999px;padding:6px 12px;color:var(--muted)}
+.hero .img-ph{min-height:440px;border-radius:220px 220px 18px 18px}
+.hero-visual{position:relative;isolation:isolate}
+.hero-visual::before{content:"";position:absolute;inset:-12% -18% -8% -18%;z-index:-1;border-radius:50%;
+  background:radial-gradient(closest-side,color-mix(in srgb,var(--accent) 22%,transparent),transparent)}
+.status{position:absolute;display:flex;align-items:center;gap:10px;background:var(--surface);border:1px solid var(--line);
+  border-radius:14px;padding:10px 14px;box-shadow:0 12px 30px -12px color-mix(in srgb,var(--ink) 35%,transparent);font-size:13px;line-height:1.3;
+  animation:floaty 6s ease-in-out infinite}
+.status b{display:block;font-weight:700}
+.status small{color:var(--muted);font:500 11px var(--mono)}
+.status .tick{width:26px;height:26px;border-radius:50%;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;flex:none}
+.status.s1{left:-28px;bottom:70px}
+.status.s2{right:14px;top:54px;animation-delay:-3s;display:grid;gap:6px;min-width:180px}
+.bar{height:5px;border-radius:9px;background:var(--soft);overflow:hidden}
+.bar i{display:block;height:100%;width:100%;background:var(--accent);border-radius:inherit}
+@keyframes floaty{50%{transform:translateY(-8px)}}
+.hl{position:relative;white-space:nowrap}
+.hl::after{content:"";position:absolute;left:0;right:0;bottom:.02em;height:.28em;z-index:-1;border-radius:4px;background:var(--accent-soft)}
+
+/* бегущая строка */
+.ticker{overflow:hidden;border-block:1px solid var(--line);margin-top:56px;mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.ticker-in{display:flex;width:max-content;animation:tick 38s linear infinite}
+.ticker span{font:500 clamp(18px,2.4vw,26px)/1 var(--display);padding:22px 0;white-space:nowrap;display:flex;align-items:center}
+.ticker span::after{content:"";width:12px;height:12px;border-radius:50%;margin-inline:28px;border:1.5px solid var(--accent);
+  background:radial-gradient(circle at 35% 30%,#fff 0 18%,transparent 22%)}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* полоса на всю ширину */
+body{overflow-x:clip}
+.band{position:relative;isolation:isolate}
+.band{background:var(--soft);box-shadow:0 0 0 100vmax var(--soft);clip-path:inset(0 -100vmax)}
+.band .svc{background:var(--surface)}
+
+.svc{transition:transform .25s,box-shadow .25s}
+.svc:hover{transform:translateY(-4px);box-shadow:0 18px 40px -20px color-mix(in srgb,var(--ink) 40%,transparent)}
+
+/* этапы */
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:0;counter-reset:st;position:relative}
+.steps::before{content:"";position:absolute;left:10%;right:10%;top:23px;border-top:1.5px dashed var(--line)}
+.step{display:grid;gap:10px;justify-items:start;padding-right:18px;position:relative}
+.step::before{counter-increment:st;content:counter(st);width:46px;height:46px;border-radius:50%;display:grid;place-items:center;
+  background:var(--surface);border:1.5px solid var(--accent);color:var(--accent);font:500 16px var(--display)}
+.step h3{font-size:16px}
+.step p{font-size:14px;color:var(--muted)}
+
+/* checklist strip - subject detail */
+.strip{display:grid;grid-template-columns:repeat(4,1fr);border-block:1px solid var(--line)}
+.strip div{padding:20px 18px;display:grid;gap:4px;border-left:1px solid var(--line)}
+.strip div:first-child{border-left:0}
+.strip b{font:500 22px var(--display);font-variant-numeric:tabular-nums}
+.strip small{color:var(--muted);font-size:13px}
+
+/* services */
+.services{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+@media (max-width:1100px){.services{grid-template-columns:repeat(2,1fr)}}
+.svc{background:var(--surface);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.svc .img-ph{border-radius:0;min-height:200px}
+.svc-body{padding:22px;display:grid;gap:12px;flex:1;align-content:start}
+.svc ul{margin:0;padding:0;list-style:none;display:grid;gap:6px;font-size:14px;color:var(--muted)}
+.svc li{padding-left:22px;position:relative}
+.svc li::before{content:"";position:absolute;left:2px;top:.55em;width:10px;height:6px;border-left:2px solid var(--accent);border-bottom:2px solid var(--accent);transform:rotate(-45deg)}
+.svc-foot{display:flex;flex-wrap:wrap;white-space:nowrap;justify-content:space-between;align-items:center;gap:12px;padding:16px 22px;border-top:1px dashed var(--line)}
+.price{font:500 15px var(--mono)}
+
+/* before/after */
+.ba{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.ba-item{display:grid;gap:10px}
+.ba-frame{position:relative;aspect-ratio:4/3;border-radius:16px;overflow:hidden;max-width:100%;border:1px solid var(--line)}
+.ba-layer{position:absolute;inset:0;display:flex;align-items:flex-start;padding:12px}
+.ba-layer span{font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;background:var(--surface);color:var(--ink);padding:4px 8px;border-radius:6px}
+.ba-before{background:
+  radial-gradient(circle at 20% 30%,color-mix(in srgb,var(--grime) 55%,transparent) 0 8%,transparent 9%),
+  radial-gradient(circle at 70% 60%,color-mix(in srgb,var(--grime) 45%,transparent) 0 12%,transparent 13%),
+  radial-gradient(circle at 45% 80%,color-mix(in srgb,var(--grime) 40%,transparent) 0 6%,transparent 7%),
+  repeating-linear-gradient(0deg,color-mix(in srgb,var(--grime) 35%,var(--soft)) 0 38px,var(--grime) 38px 40px),
+  var(--soft)}
+.ba-after{background:repeating-linear-gradient(0deg,var(--surface) 0 38px,var(--line) 38px 40px);clip-path:inset(0 0 0 var(--pos,50%))}
+.ba-after{justify-content:flex-end}
+.ba-handle{position:absolute;top:0;bottom:0;left:var(--pos,50%);width:2px;background:var(--accent);pointer-events:none}
+.ba-handle::after{content:"⇆";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:34px;height:34px;border-radius:50%;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font-size:16px}
+.ba-frame input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.ba-cap{font-size:14px;color:var(--muted)}
+
+/* premium */
+.premium{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.premium-copy{display:grid;gap:18px}
+.objects{display:flex;flex-wrap:wrap;gap:8px}
+.compare{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--surface)}
+.compare-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;padding:14px 18px;border-top:1px solid var(--line);font-size:14px}
+.compare-row:first-child{border-top:0;background:var(--soft);font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.compare-row b{font-weight:600}
+.compare-row .yes{color:var(--accent);font-weight:600}
+
+/* clients */
+.logos{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.logos .img-ph{min-height:90px;align-items:center;justify-content:center}
+.logos .img-ph span{padding:8px}
+
+/* reviews */
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.review{border-top:2px solid var(--accent);padding-top:18px;display:grid;gap:14px;align-content:start}
+.review q{font-size:16px;quotes:"«" "»"}
+.review cite{font-style:normal;font-size:14px;color:var(--muted)}
+.review cite b{color:var(--ink);font-weight:600}
+
+/* why */
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--surface)}
+.why div{padding:24px;display:grid;gap:8px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.why div:nth-child(3n){border-right:0}
+.why div:nth-last-child(-n+3){border-bottom:0}
+.why p{color:var(--muted);font-size:15px}
+
+/* form */
+.order{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;background:var(--accent);color:var(--accent-ink);border-radius:24px;padding:44px}
+.order .eyebrow{color:inherit;opacity:.8}
+.order-copy{display:grid;gap:16px;align-content:start}
+.order-copy p{opacity:.88}
+form{display:grid;gap:14px}
+.field{display:grid;gap:6px}
+.field label{font-size:13px;font-weight:600}
+.field input,.field select{font:16px var(--body);padding:13px 14px;border-radius:12px;border:1px solid transparent;background:var(--surface);color:var(--ink);width:100%}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.consent{display:flex;gap:10px;align-items:flex-start;font-size:13px}
+.consent input{margin-top:3px;accent-color:var(--ink)}
+.order .btn{background:var(--ink);color:var(--bg)}
+.form-note{font-size:13px;min-height:1.4em}
+
+/* footer */
+footer{border-top:1px solid var(--line);padding-block:40px;margin-top:72px;display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:32px;font-size:14px}
+footer h3{font-size:14px;margin-bottom:10px}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:6px;color:var(--muted)}
+.legal{grid-column:1/-1;border-top:1px solid var(--line);padding-top:18px;color:var(--muted);font-size:12px;display:grid;gap:6px}
+
+@media (max-width:900px){
+  .hero,.premium,.order{grid-template-columns:1fr}
+  .hero .img-ph{min-height:280px;border-radius:150px 150px 16px 16px}
+  .hero-visual::before{inset:-8% 0}
+  .status.s1{left:8px;bottom:18px}
+  .status.s2{right:8px;top:18px}
+  .steps{grid-template-columns:1fr;gap:20px}
+  .steps::before{left:23px;right:auto;top:10px;bottom:10px;border-top:0;border-left:1.5px dashed var(--line)}
+  .step{grid-template-columns:46px 1fr;column-gap:16px;padding-right:0}
+  .step::before{grid-row:span 2}
+  .reviews{grid-template-columns:1fr}
+  .strip{grid-template-columns:repeat(2,1fr)}
+  .strip div:nth-child(3){border-left:0}
+  .strip div:nth-child(n+3){border-top:1px solid var(--line)}
+  .logos{grid-template-columns:repeat(3,1fr)}
+  .why{grid-template-columns:1fr 1fr}
+  .why div{border-right:1px solid var(--line)!important;border-bottom:1px solid var(--line)!important}
+  .why div:nth-child(2n){border-right:0!important}
+  .why div:nth-last-child(-n+2){border-bottom:0!important}
+  footer{grid-template-columns:1fr}
+  .nav{display:none}
+}
+@media (max-width:600px){
+  section{padding-block:52px}
+  .ba,.why,.row2,.services{grid-template-columns:1fr}
+  .why div{border-right:0!important;border-bottom:1px solid var(--line)!important}
+  .why div:last-child{border-bottom:0!important}
+  .order{padding:26px 20px}
+  .compare-row{grid-template-columns:1.1fr 1fr 1fr;font-size:13px;padding:12px}
+  .top-in .btn{display:none}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+/* подробности услуги */
+.svc h3{font-size:17px}
+.svc details{border-top:1px solid var(--line);padding-top:10px}
+.svc summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--accent);list-style:none;display:flex;align-items:center;gap:6px}
+.svc summary::-webkit-details-marker{display:none}
+.svc summary::after{content:"+";font:500 16px var(--mono);transition:transform .2s}
+.svc details[open] summary::after{transform:rotate(45deg)}
+.svc details>*:not(summary){margin-top:10px}
+.std{font-size:13px;color:var(--muted);background:var(--soft);border-radius:10px;padding:10px 12px}
+.name-note{font-size:13px;color:var(--muted)}
+.brands{display:grid;gap:8px;padding-top:6px;border-top:1px dashed var(--line)}
+.brands p{font:500 15px var(--mono);letter-spacing:.02em}
+
+/* квиз */
+.quiz{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:start}
+.quiz-side{display:grid;gap:16px;position:sticky;top:calc(env(safe-area-inset-top,0px) + 90px)}
+.quiz-map{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:10px;counter-reset:qm}
+.quiz-map li{display:flex;align-items:center;gap:12px;font-size:14px;color:var(--muted);counter-increment:qm}
+.quiz-map li::before{content:counter(qm);width:28px;height:28px;border-radius:50%;border:1.5px solid var(--line);display:grid;place-items:center;font:500 12px var(--mono);flex:none;transition:.2s}
+.quiz-map li.done{color:var(--ink)}
+.quiz-map li.done::before{content:"✓";background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.quiz-map li.cur{color:var(--ink);font-weight:600}
+.quiz-map li.cur::before{border-color:var(--accent);color:var(--accent)}
+.quiz-card{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:28px;display:grid;gap:22px;
+  box-shadow:0 24px 50px -30px color-mix(in srgb,var(--ink) 45%,transparent)}
+.quiz-top{display:grid;gap:10px}
+.quiz-count{font:500 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.quiz-bar{height:6px;border-radius:9px;background:var(--soft);overflow:hidden}
+.quiz-bar i{display:block;height:100%;width:20%;background:var(--accent);border-radius:inherit;transition:width .35s ease}
+.q-step{border:0;margin:0;padding:0;display:grid;gap:18px;min-width:0}
+.q-step legend{font:500 clamp(19px,2.2vw,24px)/1.25 var(--display);text-wrap:balance;padding:0;margin-bottom:18px}
+.q-step legend small{display:block;font:500 13px var(--body);color:var(--muted);margin-top:6px}
+.opts{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.opt{position:relative;cursor:pointer}
+.opt input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.opt span{display:flex;align-items:center;gap:12px;min-height:58px;padding:14px 16px;border:1.5px solid var(--line);border-radius:14px;font-size:15px;font-weight:500;line-height:1.3;transition:border-color .15s,background .15s}
+.opt span::before{content:"";width:20px;height:20px;flex:none;border:1.5px solid var(--line);border-radius:50%;background:var(--surface);transition:.15s}
+.opt input[type=checkbox]+span::before{border-radius:6px}
+.opt:hover span{border-color:color-mix(in srgb,var(--accent) 50%,var(--line))}
+.opt input:checked+span{border-color:var(--accent);background:var(--accent-soft)}
+.opt input:checked+span::before{background:var(--accent);border-color:var(--accent);box-shadow:inset 0 0 0 4px var(--surface)}
+.opt input[type=checkbox]:checked+span::before{box-shadow:none;background:var(--accent) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'%3E%3Cpath d='M3 7.5l2.5 2.5L11 4.5' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/14px no-repeat}
+.opt input:focus-visible+span{outline:2.5px solid var(--accent);outline-offset:2px}
+.q-contacts{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.q-contacts .field input{font:16px var(--body);padding:13px 14px;border-radius:12px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);width:100%}
+.q-contacts .field label small{font-weight:400;color:var(--muted)}
+.flabel{font-size:13px;font-weight:600}
+.seg{display:flex;border:1.5px solid var(--line);border-radius:12px;overflow:hidden}
+.seg label{flex:1;position:relative;cursor:pointer}
+.seg input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.seg span{display:block;text-align:center;padding:12px 6px;font-size:14px;font-weight:600;border-left:1px solid var(--line)}
+.seg label:first-child span{border-left:0}
+.seg input:checked+span{background:var(--accent);color:var(--accent-ink)}
+.seg input:focus-visible+span{outline:2.5px solid var(--accent);outline-offset:-3px}
+.quiz-nav{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.quiz-nav #q-next{margin-left:auto}
+.q-note{color:#B3261E;margin:0}
+.q-done{display:grid;gap:12px;justify-items:start}
+.q-done .tick{width:48px;height:48px;border-radius:50%;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center}
+.q-summary{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;margin:6px 0;font-size:14px;background:var(--soft);border-radius:12px;padding:14px 16px;width:100%}
+.q-summary dt{color:var(--muted)}
+.q-summary dd{margin:0;font-weight:600}
+@media (max-width:900px){.quiz{grid-template-columns:1fr}.quiz-side{position:static}.quiz-map{display:none}}
+@media (max-width:600px){.opts,.q-contacts{grid-template-columns:1fr}.quiz-card{padding:20px}}
+
+/* CRO-правки */
+.svc-cta{font-weight:700;color:var(--accent);text-decoration:none}
+.svc-cta:hover{text-decoration:underline}
+.svc-foot{justify-content:flex-start}
+.more{border-top:1px dashed color-mix(in srgb,var(--accent-ink) 35%,transparent);padding-top:12px;display:grid;gap:14px}
+.more summary{cursor:pointer;font-size:14px;font-weight:600;opacity:.9}
+.more[open] summary{margin-bottom:4px}
+.mbar{display:none}
+@media (max-width:600px){
+  .mbar{display:grid;grid-template-columns:1fr 1.4fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:20;
+    padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:color-mix(in srgb,var(--bg) 92%,transparent);
+    backdrop-filter:blur(10px);border-top:1px solid var(--line)}
+  .mbar a{display:flex;align-items:center;justify-content:center;min-height:48px;border-radius:999px;font-weight:700;text-decoration:none;font-size:15px}
+  .mbar-call{border:1.5px solid var(--line);color:var(--ink)}
+  .mbar-quiz{background:var(--accent);color:var(--accent-ink)}
+  footer{padding-bottom:90px}
+}
+
+/* вакансии */
+.jobs-btn{font-size:14px;font-weight:600;text-decoration:none;color:var(--ink);border:1.5px solid var(--line);border-radius:999px;padding:9px 16px;white-space:nowrap}
+.jobs-btn:hover{border-color:var(--accent);color:var(--accent)}
+.jobs{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:start}
+.jobs-copy{display:grid;gap:16px;align-content:start}
+.jobs-perks{margin:0;padding:0;list-style:none;display:grid;gap:8px;font-size:15px}
+.jobs-perks li{padding-left:24px;position:relative}
+.jobs-perks li::before{content:"";position:absolute;left:3px;top:.5em;width:10px;height:6px;border-left:2px solid var(--accent);border-bottom:2px solid var(--accent);transform:rotate(-45deg)}
+.vacancies{display:grid;gap:10px;margin-top:6px}
+.vac{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 18px;display:grid;gap:4px}
+.vac h3{font-size:16px}
+.vac p{font-size:14px;color:var(--muted)}
+.small{font-size:14px}
+.jobs-form{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:28px;display:grid;gap:14px}
+.jobs-form h3{font-size:20px}
+.jobs-form .field input,.jobs-form .field select{font:16px var(--body);padding:13px 14px;border-radius:12px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);width:100%}
+.jobs-form .field label{font-size:13px;font-weight:600}
+@media (max-width:900px){.jobs{grid-template-columns:1fr}}
+@media (max-width:600px){.jobs-form{padding:20px}.top-in{gap:12px}.jobs-btn{padding:7px 12px;font-size:13px;margin-left:auto}.top-in .phone{display:none}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-in">
+    <a class="logo" href="#top">
+      <span class="logo-mark" aria-hidden="true">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1c1.8 3 1.8 6 0 14M8 1C6.2 4 6.2 7 8 15M2 8c3-1 9-1 12 0" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+      </span>
+      <span>ЧЫЛКЫТ</span>
+    </a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#services">Услуги</a>
+      <a href="#medical">Клиникам</a>
+      <a href="#quiz">Расчёт</a>
+            <a href="#contacts">Контакты</a>
+    </nav>
+    <span class="phone">+7 912 465-59-61</span>
+    <a class="jobs-btn" href="https://vk.com/chylkyt" target="_blank" rel="noopener">ВКонтакте</a>
+    <a class="btn" href="#quiz">Рассчитать стоимость</a>
+  </div>
+</header>
+
+<div class="mbar" aria-label="Быстрая связь">
+  <a href="tel:+79124655961" class="mbar-call">Позвонить</a>
+  <a href="#quiz" class="mbar-quiz">Рассчитать стоимость</a>
+</div>
+
+<main class="wrap" id="top">
+
+  <section class="hero">
+    <div class="hero-copy">
+      <span class="eyebrow">Чистота, которая работает на ваш имидж</span>
+      <h1>Клининг производств, клиник и офисов <span class="hl">в Ижевске</span></h1>
+      <p class="lead">Убираем без остановки вашей работы. Свой штат с медкнижками, договор и акты, фотоотчёт после каждой уборки. Работаем по всей Удмуртии.</p>
+      <div class="hero-cta">
+        <a class="btn" href="#quiz">Рассчитать за 1 минуту</a>
+        <a class="btn ghost" href="tel:+79124655961">+7 912 465-59-61</a>
+      </div>
+      <div class="chips">
+        <span class="chip">Безнал для юрлиц</span>
+        <span class="chip">NDA по запросу</span>
+        <span class="chip">Выезд на осмотр в день обращения</span>
+      </div>
+      <p class="name-note">«Чылкыт» по-удмуртски значит «чистый»</p>
+    </div>
+    <div class="hero-visual">
+      <div class="img-ph"><span>Фото: команда на объекте, вертикальное</span></div>
+      <div class="status s1" aria-hidden="true">
+        <span class="tick"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7.5l2.5 2.5L11 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span><b>Фотоотчёт</b><small>после каждой уборки</small></span>
+      </div>
+      <div class="status s2" aria-hidden="true">
+        <span><b>Чек-лист приёмки</b><small>менеджер проверяет объект</small></span>
+        <span class="bar"><i></i></span>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip" aria-label="Коротко о компании">
+    <div><b>13 лет</b><small>опыта команды</small></div>
+    <div><b>500+</b><small>обслуженных объектов</small></div>
+    <div><b>1 день</b><small>выезд на осмотр после заявки</small></div>
+    <div><b>Договор</b><small>акты и журналы для проверок</small></div>
+  </div>
+
+
+  <section id="services" class="band">
+    <div class="sec-head">
+      <span class="eyebrow">Услуги</span>
+      <h2>Что убираем</h2>
+      <p class="muted">Цену считаем после осмотра объекта: она зависит от площади, покрытий и графика. Чтобы получить расчёт, ответьте на 4 вопроса.</p>
+    </div>
+    <div class="services">
+
+      <article class="svc" id="industrial">
+        <div class="img-ph"><span>Фото: цех или склад</span></div>
+        <div class="svc-body">
+          <h3>Производства и склады</h3>
+          <p class="muted">Клининг для промышленности, логистических хабов и пищевых производств без остановки рабочего цикла.</p>
+          <ul>
+            <li>Промышленные полы: ГСМ, масла, стружка, сажа, следы шин</li>
+            <li>Стеллажи, балки и мезонины на любой высоте</li>
+            <li>Раздевалки, душевые и комнаты приёма пищи</li>
+            <li>Дебаркадеры и зоны комплектации</li>
+          </ul>
+          <details>
+            <summary>Подробнее об услуге</summary>
+            <ul>
+              <li>Удаление цементного молочка и маркировочных загрязнений</li>
+              <li>Мытьё промышленных окон и стеклянных перегородок</li>
+              <li>Дезинфекция санбытового блока по нормам охраны труда</li>
+              <li>Очистка перегрузочных мостов</li>
+            </ul>
+            <p class="std">Соблюдаем технику безопасности, регламенты ОТиТБ и допуски для работы в действующих цехах. Промышленные пылесосы и сертифицированная химия.</p>
+          </details>
+        </div>
+        <div class="svc-foot"><a href="#quiz" class="svc-cta" data-obj="Производство или склад" data-qtype="">Рассчитать стоимость →</a></div>
+      </article>
+
+      <article class="svc">
+        <div class="img-ph"><span>Фото: офис утром</span></div>
+        <div class="svc-body">
+          <h3>Ежедневная уборка офисов</h3>
+          <p class="muted">Порядок к началу рабочего дня. Работаем в согласованное время и не мешаем сотрудникам.</p>
+          <ul>
+            <li>Входная группа и ресепшен</li>
+            <li>Рабочие места, техника, вынос мусора</li>
+            <li>Кухня, санузлы, пополнение расходников</li>
+            <li>Дезинфекция ручек, выключателей, кнопок лифта</li>
+          </ul>
+          <details>
+            <summary>Подробнее об услуге</summary>
+            <ul>
+              <li>Полировка стеклянных дверей</li>
+              <li>Чистка ковролина, включая удаление жвачки</li>
+              <li>Влажная уборка ламината, керамогранита, линолеума</li>
+              <li>Плинтусы, радиаторы, ножки мебели</li>
+            </ul>
+            <p class="std">Персонал с медкнижками работает в сменной обуви. За объектом закреплён персональный менеджер.</p>
+          </details>
+        </div>
+        <div class="svc-foot"><a href="#quiz" class="svc-cta" data-obj="Офис" data-qtype="Ежедневная или регулярная">Рассчитать стоимость →</a></div>
+      </article>
+
+      <article class="svc">
+        <div class="img-ph"><span>Фото: генеральная уборка</span></div>
+        <div class="svc-body">
+          <h3>Генеральная уборка коммерческих помещений</h3>
+          <p class="muted">Разовая глубокая уборка своей техникой. Работаем в нерабочие часы.</p>
+          <ul>
+            <li>Окна и фасады изнутри и снаружи</li>
+            <li>Вентиляция, карнизы и плафоны на высоте</li>
+            <li>Плитка, швы, полировка хрома</li>
+            <li>Размывка полов роторной машиной и полировка</li>
+          </ul>
+          <details>
+            <summary>Подробнее об услуге</summary>
+            <ul>
+              <li>Рамы и отливы</li>
+              <li>Радиаторы, плинтусы, дверные блоки</li>
+              <li>Обеспыливание офисной техники</li>
+            </ul>
+          </details>
+        </div>
+        <div class="svc-foot"><a href="#quiz" class="svc-cta" data-obj="" data-qtype="Генеральная">Рассчитать стоимость →</a></div>
+      </article>
+
+      <article class="svc">
+        <div class="img-ph"><span>Фото: объект после ремонта</span></div>
+        <div class="svc-body">
+          <h3>После ремонта и строительства</h3>
+          <p class="muted">Готовим объект к эксплуатации за 24–48 часов и сдаём по чек-листу приёмки чистовой отделки.</p>
+          <ul>
+            <li>Сбор и вывоз строительного мусора</li>
+            <li>Обеспыливание сверху вниз пылесосами с HEPA</li>
+            <li>Скотч, клей, цемент, пена, силикон, краска</li>
+            <li>Окна, плёнки и наклейки</li>
+          </ul>
+          <details>
+            <summary>Подробнее об услуге</summary>
+            <ul>
+              <li>Размывка твёрдых полов, швы плитки от белого налёта</li>
+              <li>Деликатная уборка паркета и ламината</li>
+              <li>Сантехника, плёнка с новой техники, хром</li>
+              <li>Шкафы, антресоли, радиаторы, дверные блоки</li>
+            </ul>
+            <p class="std">Менеджер проверяет объект перед сдачей, недочёты устраняем на месте.</p>
+          </details>
+        </div>
+        <div class="svc-foot"><a href="#quiz" class="svc-cta" data-obj="" data-qtype="После ремонта">Рассчитать стоимость →</a></div>
+      </article>
+
+      <article class="svc" id="medical">
+        <div class="img-ph"><span>Фото: клиника или процедурный кабинет</span></div>
+        <div class="svc-body">
+          <h3>Клиники и медицинские центры</h3>
+          <p class="muted">Санитарная уборка по требованиям СанПиН без прерывания приёма пациентов.</p>
+          <ul>
+            <li>Дезинфекция контактных поверхностей</li>
+            <li>Холлы, ресепшен, зоны ожидания</li>
+            <li>Процедурные кабинеты и стоматология</li>
+            <li>Журналы учёта и акты для проверок Роспотребнадзора</li>
+          </ul>
+          <details>
+            <summary>Подробнее об услуге</summary>
+            <ul>
+              <li>Лаборатории и диагностические блоки</li>
+              <li>Чистые помещения: безворсовый инвентарь и одноразовые расходники</li>
+              <li>Санузлы: мочевой камень, известковый налёт, дозаторы</li>
+              <li>Полы и стены: наливные полы, линолеум, кварц-винил, кафель</li>
+              <li>Сбор и упаковка медотходов класса А. Вывоз не входит в услугу</li>
+            </ul>
+            <p class="std">В штате сертифицированный дезинфектор, у компании есть лицензия на работу с дезсредствами I–IV класса опасности. Персонал с медкнижками проходит инструктаж по биобезопасности. Используем средства, разрешённые для медицинских организаций: хлор- и кислородсодержащие, на основе ЧАС.</p>
+          </details>
+        </div>
+        <div class="svc-foot"><a href="#quiz" class="svc-cta" data-obj="Клиника или медцентр" data-qtype="">Рассчитать стоимость →</a></div>
+      </article>
+
+      <article class="svc">
+        <div class="img-ph"><span>Фото: витрина или входная группа</span></div>
+        <div class="svc-body">
+          <h3>Окна, витрины и входные группы</h3>
+          <p class="muted">Окна, витрины и стеклянные фасады любой высоты, для сложных фасадов привлекаем промышленных альпинистов.</p>
+          <ul>
+            <li>Рамы, створки, подоконники, отливы, откосы</li>
+            <li>Панорамное остекление и витрины</li>
+            <li>Стеклянные двери любого типа</li>
+            <li>Отпечатки и уличная грязь на дверях</li>
+          </ul>
+          <details>
+            <summary>Подробнее об услуге</summary>
+            <p class="std">Химия безопасна для уплотнителей, камня, алюминия и прилегающего ландшафта. Полируем стекло без разводов и радужных бликов.</p>
+          </details>
+        </div>
+        <div class="svc-foot"><a href="#quiz" class="svc-cta" data-obj="" data-qtype="Окна, витрины, фасады">Рассчитать стоимость →</a></div>
+      </article>
+
+      <article class="svc">
+        <div class="img-ph"><span>Фото: химчистка кресла или ковра</span></div>
+        <div class="svc-body">
+          <h3>Химчистка мебели и ковров</h3>
+          <p class="muted">Выездная химчистка в офисах, ресторанах и гостиницах.</p>
+          <ul>
+            <li>Подбор химии под ткань: шёлк, шерсть, велюр, кожа, замша</li>
+            <li>Экстракционная промывка без переувлажнения</li>
+            <li>Пятна: вино, кофе, кровь, жир, чернила</li>
+            <li>Устранение запахов, сушка от 2 до 8 часов</li>
+          </ul>
+          <details>
+            <summary>Подробнее об услуге</summary>
+            <p class="std">Гипоаллергенные сертифицированные составы. Тестируем химию на незаметном участке, защищаем фурнитуру и пол плёнкой.</p>
+          </details>
+        </div>
+        <div class="svc-foot"><a href="#quiz" class="svc-cta" data-obj="" data-qtype="Химчистка мебели и ковров">Рассчитать стоимость →</a></div>
+      </article>
+
+      <article class="svc">
+        <div class="img-ph"><span>Фото: территория у здания</span></div>
+        <div class="svc-body">
+          <h3>Придомовая и прилегающая территория</h3>
+          <p class="muted">Порядок у ЖК, бизнес-центра или предприятия круглый год.</p>
+          <ul>
+            <li>Лето: мусор, урны, газоны, парковки</li>
+            <li>Зима: уборка и вывоз снега, реагенты</li>
+            <li>Межсезонье: ливнёвки, водостоки, листва</li>
+            <li>Лавочки, детские и спортивные площадки</li>
+          </ul>
+          <details>
+            <summary>Подробнее об услуге</summary>
+            <p class="std">Работаем по графику: утренняя, дневная и вечерняя уборка. Стоимость считаем по плану участка.</p>
+          </details>
+        </div>
+        <div class="svc-foot"><a href="#quiz" class="svc-cta" data-obj="" data-qtype="Уборка территории">Рассчитать стоимость →</a></div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="quiz">
+    <div class="quiz">
+      <aside class="quiz-side">
+        <span class="eyebrow">Расчёт за 1 минуту</span>
+        <h2>Узнайте стоимость уборки вашего объекта</h2>
+        <p class="muted">4 вопроса об объекте. Менеджер посмотрит ответы, перезвонит с расчётом и предложит дату осмотра.</p>
+        <ol class="quiz-map" id="quiz-map">
+          <li>Объект</li><li>Вид уборки</li><li>Площадь</li><li>Сроки</li><li>Контакты</li>
+        </ol>
+      </aside>
+
+      <form class="quiz-card" id="quiz-form" novalidate>
+        <div class="quiz-top">
+          <span class="quiz-count" id="quiz-count">Шаг 1 из 5</span>
+          <div class="quiz-bar" aria-hidden="true"><i id="quiz-bar"></i></div>
+        </div>
+
+        <fieldset class="q-step" data-step="1">
+          <legend>Какой объект нужно убрать?</legend>
+          <div class="opts">
+            <label class="opt"><input type="radio" name="q-object" value="Производство или склад"><span>Производство или склад</span></label>
+            <label class="opt"><input type="radio" name="q-object" value="Офис"><span>Офис</span></label>
+            <label class="opt"><input type="radio" name="q-object" value="Клиника или медцентр"><span>Клиника или медцентр</span></label>
+            <label class="opt"><input type="radio" name="q-object" value="ТЦ или коммерческое помещение"><span>ТЦ или коммерческое помещение</span></label>
+            <label class="opt"><input type="radio" name="q-object" value="Жилой комплекс или бизнес-центр"><span>ЖК или бизнес-центр</span></label>
+            <label class="opt"><input type="radio" name="q-object" value="Другое"><span>Другое</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="q-step" data-step="2" hidden>
+          <legend>Какая уборка нужна? <small>Можно выбрать несколько</small></legend>
+          <div class="opts">
+            <label class="opt"><input type="checkbox" name="q-type" value="Ежедневная или регулярная"><span>Ежедневная или регулярная</span></label>
+            <label class="opt"><input type="checkbox" name="q-type" value="Генеральная"><span>Разовая генеральная</span></label>
+            <label class="opt"><input type="checkbox" name="q-type" value="После ремонта"><span>После ремонта или стройки</span></label>
+            <label class="opt"><input type="checkbox" name="q-type" value="Окна, витрины, фасады"><span>Окна, витрины, фасады</span></label>
+            <label class="opt"><input type="checkbox" name="q-type" value="Химчистка мебели и ковров"><span>Химчистка мебели и ковров</span></label>
+            <label class="opt"><input type="checkbox" name="q-type" value="Уборка территории"><span>Уборка территории</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="q-step" data-step="3" hidden>
+          <legend>Какая площадь объекта?</legend>
+          <div class="opts">
+            <label class="opt"><input type="radio" name="q-area" value="до 200 м²"><span>до 200 м²</span></label>
+            <label class="opt"><input type="radio" name="q-area" value="200–1 000 м²"><span>200–1 000 м²</span></label>
+            <label class="opt"><input type="radio" name="q-area" value="1 000–5 000 м²"><span>1 000–5 000 м²</span></label>
+            <label class="opt"><input type="radio" name="q-area" value="более 5 000 м²"><span>более 5 000 м²</span></label>
+            <label class="opt"><input type="radio" name="q-area" value="Не знаю точно"><span>Не знаю точно</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="q-step" data-step="4" hidden>
+          <legend>Когда нужно начать?</legend>
+          <div class="opts">
+            <label class="opt"><input type="radio" name="q-when" value="Срочно, сегодня или завтра"><span>Срочно, сегодня или завтра</span></label>
+            <label class="opt"><input type="radio" name="q-when" value="В течение недели"><span>В течение недели</span></label>
+            <label class="opt"><input type="radio" name="q-when" value="В этом месяце"><span>В этом месяце</span></label>
+            <label class="opt"><input type="radio" name="q-when" value="Пока сравниваю условия"><span>Пока сравниваю условия</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="q-step" data-step="5" hidden>
+          <legend>Куда прислать расчёт? <small>Номер нужен, только чтобы связаться с вами по этой заявке.</small></legend>
+          <div class="q-contacts">
+            <div class="field"><label for="q-name">Имя</label><input id="q-name" name="q-name" autocomplete="name" placeholder="Анна"></div>
+            <div class="field"><label for="q-phone">Телефон</label><input id="q-phone" name="q-phone" type="tel" autocomplete="tel" placeholder="+7 900 000-00-00"></div>
+            <div class="field"><label for="q-company">Компания <small>необязательно</small></label><input id="q-company" name="q-company" autocomplete="organization" placeholder="ООО …"></div>
+            <div class="field"><span class="flabel">Как удобнее связаться</span>
+              <div class="seg">
+                <label><input type="radio" name="q-channel" value="Звонок" checked><span>Звонок</span></label>
+                <label><input type="radio" name="q-channel" value="WhatsApp"><span>WhatsApp</span></label>
+                <label><input type="radio" name="q-channel" value="Telegram"><span>Telegram</span></label>
+              </div>
+            </div>
+          </div>
+          <label class="consent" for="q-consent"><input type="checkbox" id="q-consent"> <span>Согласен на обработку персональных данных по <a href="privacy.html" target="_blank">политике конфиденциальности</a></span></label>
+        </fieldset>
+
+        <div class="q-done" id="q-done" hidden>
+          <span class="tick big" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 14 14" fill="none"><path d="M3 7.5l2.5 2.5L11 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <h3 id="q-done-title">Заявка принята</h3>
+          <div class="muted" id="q-done-text">Менеджер свяжется с вами в рабочее время, Пн–Пт с 9 до 17.</div>
+          <dl class="q-summary" id="q-summary"></dl>
+          <button type="button" class="btn ghost" id="q-restart">Пройти заново</button>
+        </div>
+
+        <p class="form-note q-note" id="q-note" role="status"></p>
+        <div class="quiz-nav" id="quiz-nav">
+          <button type="button" class="btn ghost" id="q-back" hidden>← Назад</button>
+          <button type="button" class="btn" id="q-next">Далее →</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="sec-head">
+      <span class="eyebrow">Почему мы</span>
+      <h2>Что вы получаете</h2>
+    </div>
+    <div class="why">
+      <div><h3>Собственный штат</h3><p>Сотрудники с медкнижками, проходят инструктаж. Никаких случайных исполнителей.</p></div>
+      <div><h3>Без остановки процессов</h3><p>Убираем в согласованное время: до открытия, ночью или между сменами.</p></div>
+      <div><h3>Свой менеджер</h3><p>Один человек отвечает за объект и приезжает с проверками.</p></div>
+      <div><h3>Проф. химия и техника</h3><p>Vileda, TTS, Grass, Pro-Brite, Vortex, Интерхим. Подбираем под покрытие.</p></div>
+      <div><h3>Документы каждый месяц</h3><p>Договор, акты для бухгалтерии, журналы уборок для проверок. NDA по запросу.</p></div>
+      <div><h3>Контроль на каждом этапе</h3><p>Чек-лист, фотоотчёт после уборки и выезд менеджера. Недочёты устраняем на месте.</p></div>
+    </div>
+  </section>
+
+  <section id="process" class="band">
+    <div class="sec-head">
+      <span class="eyebrow">Как мы работаем</span>
+      <h2>Как начать работу</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><h3>Заявка</h3><p>Звонок, почта или форма на сайте.</p></div>
+      <div class="step"><h3>Осмотр объекта</h3><p>Выезжаем, уточняем задачи и согласуем ТЗ.</p></div>
+      <div class="step"><h3>Смета и договор</h3><p>Фиксируем объём работ, график и стоимость.</p></div>
+      <div class="step"><h3>Уборка</h3><p>Работает наш штат со своей техникой и химией.</p></div>
+      <div class="step"><h3>Проверка и акты</h3><p>Менеджер проверяет по чек-листу, присылаем фотоотчёт и документы.</p></div>
+    </div>
+  </section>
+
+  <!-- скрыто до получения фото, логотипов и отзывов от клиента: снять hidden -->
+  <section id="results" hidden>
+    <div class="sec-head">
+      <span class="eyebrow">До / после</span>
+      <h2>Результат на реальных объектах</h2>
+      <p class="muted">Потяните разделитель, чтобы сравнить.</p>
+    </div>
+    <div class="ba">
+      <figure class="ba-item" style="margin:0">
+        <div class="ba-frame" style="--pos:50%">
+          <div class="ba-layer ba-before"><span>До · фото клиента</span></div>
+          <div class="ba-layer ba-after"><span>После · фото клиента</span></div>
+          <div class="ba-handle"></div>
+          <input type="range" min="0" max="100" value="50" aria-label="Сравнить до и после, пример 1" id="ba1">
+        </div>
+        <figcaption class="ba-cap"><span class="ph">Подпись: объект и вид уборки</span></figcaption>
+      </figure>
+      <figure class="ba-item" style="margin:0">
+        <div class="ba-frame" style="--pos:50%">
+          <div class="ba-layer ba-before"><span>До · фото клиента</span></div>
+          <div class="ba-layer ba-after"><span>После · фото клиента</span></div>
+          <div class="ba-handle"></div>
+          <input type="range" min="0" max="100" value="50" aria-label="Сравнить до и после, пример 2" id="ba2">
+        </div>
+        <figcaption class="ba-cap"><span class="ph">Подпись: объект и вид уборки</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+
+  <section id="clients" hidden>
+    <div class="sec-head">
+      <span class="eyebrow">Нам доверяют</span>
+      <h2>Клиенты</h2>
+      <p class="muted"><span class="ph">Логотипы клиентов и согласие на их размещение</span></p>
+    </div>
+    <div class="logos">
+      <div class="img-ph"><span>Логотип 1</span></div>
+      <div class="img-ph"><span>Логотип 2</span></div>
+      <div class="img-ph"><span>Логотип 3</span></div>
+      <div class="img-ph"><span>Логотип 4</span></div>
+      <div class="img-ph"><span>Логотип 5</span></div>
+      <div class="img-ph"><span>Логотип 6</span></div>
+    </div>
+  </section>
+
+  <section id="reviews" hidden>
+    <div class="sec-head">
+      <span class="eyebrow">Отзывы</span>
+      <h2>Что говорят клиенты</h2>
+      <p class="muted"><span class="ph">Нужны 3–6 реальных отзывов и ссылка на Яндекс Карты или 2ГИС</span></p>
+    </div>
+    <div class="reviews">
+      <figure class="review" style="margin:0"><q class="ph">Текст отзыва</q><cite><b class="ph">Имя, должность</b> · <span class="ph">компания</span></cite></figure>
+      <figure class="review" style="margin:0"><q class="ph">Текст отзыва</q><cite><b class="ph">Имя, должность</b> · <span class="ph">компания</span></cite></figure>
+      <figure class="review" style="margin:0"><q class="ph">Текст отзыва</q><cite><b class="ph">Имя, должность</b> · <span class="ph">компания</span></cite></figure>
+    </div>
+  </section>
+
+  <section id="order">
+    <div class="order">
+      <div class="order-copy">
+        <span class="eyebrow">Заявка</span>
+        <h2>Приедем на осмотр и посчитаем стоимость</h2>
+        <p>Оставьте телефон. Менеджер перезвонит, уточнит задачу и договорится об осмотре. Заявки с сайта принимаем круглосуточно, перезваниваем Пн–Пт с 9 до 17.</p>
+        <p>Телефон: <span class="phone">+7 912 465-59-61</span><br>Почта: vaganova426000@mail.ru</p>
+      </div>
+      <form id="order-form" novalidate>
+        <div class="row2">
+          <div class="field"><label for="f-name">Имя</label><input id="f-name" name="name" autocomplete="name" placeholder="Анна"></div>
+          <div class="field"><label for="f-phone">Телефон</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="+7 900 000-00-00" required></div>
+        </div>
+        <div class="field"><label for="f-type">Вид уборки</label>
+            <select id="f-type" name="type">
+              <option>Производство или склад</option>
+              <option>Ежедневная уборка офиса</option>
+              <option>Генеральная уборка</option>
+              <option>Уборка после ремонта</option>
+              <option>Клиника или медцентр</option>
+              <option>Окна и витрины</option>
+              <option>Химчистка мебели и ковров</option>
+              <option>Уборка территории</option>
+            </select>
+          </div>
+        <details class="more">
+          <summary>Добавить детали: площадь, адрес, дата</summary>
+        <div class="row2">
+          <div class="field"><label for="f-area">Площадь, м²</label><input id="f-area" name="area" inputmode="numeric" placeholder="1200"></div>
+          <div class="field"><label for="f-addr">Адрес объекта</label><input id="f-addr" name="address" autocomplete="street-address" placeholder="Ижевск, ул. …"></div>
+        </div>
+        <div class="row2">
+          <div class="field"><label for="f-date">Желаемая дата</label><input id="f-date" name="date" type="date"></div>
+        </div>
+        </details>
+        <label class="consent" for="f-consent"><input type="checkbox" id="f-consent" required> <span>Согласен на обработку персональных данных по <a href="privacy.html" target="_blank">политике конфиденциальности</a></span></label>
+        <button class="btn" type="submit">Жду звонка</button>
+        <p class="form-note" id="form-note" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- вакансии скрыты до условий от клиента -->
+  <section id="jobs" class="band" hidden>
+    <div class="jobs">
+      <div class="jobs-copy">
+        <span class="eyebrow">Вакансии</span>
+        <h2>Работа в ЧЫЛКЫТ</h2>
+        <p class="muted">Набираем сотрудников в собственный штат. Работаем с клиниками, производствами и офисами Ижевска.</p>
+        <ul class="jobs-perks">
+          <li>Работа своей техникой и профессиональной химией</li>
+          <li>Инструктаж перед выходом на объект</li>
+          <li><span class="ph">Оформление: трудовой договор или ГПХ</span></li>
+          <li><span class="ph">Оплата и график выплат</span></li>
+        </ul>
+        <div class="vacancies">
+          <article class="vac">
+            <h3><span class="ph">Уборщик служебных помещений</span></h3>
+            <p><span class="ph">Офисы и клиники · график 5/2 · от … ₽</span></p>
+          </article>
+          <article class="vac">
+            <h3><span class="ph">Уборщик производственных помещений</span></h3>
+            <p><span class="ph">Цеха и склады · сменный график · от … ₽</span></p>
+          </article>
+          <article class="vac">
+            <h3><span class="ph">Оператор поломоечной машины</span></h3>
+            <p><span class="ph">Склады и ТЦ · график … · от … ₽</span></p>
+          </article>
+        </div>
+        <p class="muted small">Вопросы о работе: <span class="phone">+7 912 465-59-61</span>, Пн–Пт 9–17</p>
+      </div>
+      <form class="jobs-form" id="jobs-form" novalidate>
+        <h3>Откликнуться</h3>
+        <div class="field"><label for="j-name">Имя</label><input id="j-name" name="name" autocomplete="name" placeholder="Мария"></div>
+        <div class="field"><label for="j-phone">Телефон</label><input id="j-phone" name="phone" type="tel" autocomplete="tel" placeholder="+7 900 000-00-00"></div>
+        <div class="field"><label for="j-vac">Вакансия</label>
+          <select id="j-vac" name="vacancy">
+            <option>Уборщик служебных помещений</option>
+            <option>Уборщик производственных помещений</option>
+            <option>Оператор поломоечной машины</option>
+            <option>Другое</option>
+          </select>
+        </div>
+        <div class="field"><span class="flabel">Опыт в клининге</span>
+          <div class="seg">
+            <label><input type="radio" name="j-exp" value="Нет" checked><span>Нет</span></label>
+            <label><input type="radio" name="j-exp" value="До года"><span>До года</span></label>
+            <label><input type="radio" name="j-exp" value="Больше года"><span>Больше года</span></label>
+          </div>
+        </div>
+        <label class="consent" for="j-consent"><input type="checkbox" id="j-consent"> <span>Согласен на обработку персональных данных по <a href="privacy.html" target="_blank">политике конфиденциальности</a></span></label>
+        <button class="btn" type="submit">Отправить отклик</button>
+        <p class="form-note" id="j-note" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer id="contacts">
+    <div>
+      <a class="logo" href="#top"><span class="logo-mark" aria-hidden="true">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1c1.8 3 1.8 6 0 14M8 1C6.2 4 6.2 7 8 15M2 8c3-1 9-1 12 0" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+      </span><span>ЧЫЛКЫТ</span></a>
+      <p class="muted" style="margin-top:12px">Клининг для бизнеса в Ижевске и Удмуртии</p>
+    </div>
+    <div>
+      <h3>Контакты</h3>
+      <ul>
+        <li class="phone">+7 912 465-59-61</li>
+        <li>vaganova426000@mail.ru</li>
+        <li>Ижевск, ул. Ленина, 144 к. 2</li>
+        <li>Пн–Пт, 9:00–17:00</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Соцсети</h3>
+      <ul>
+        <li><a href="https://vk.com/chylkyt" target="_blank" rel="noopener">ВКонтакте: vk.com/chylkyt</a></li>
+      </ul>
+    </div>
+    <div class="legal">
+      <span>ООО «ЧЫЛКЫТ» · ИНН 1800020992 · ОГРН 1231800001025</span>
+      <span>Юридический адрес: 426075, г. Ижевск, ул. Ленина, д. 144/1, оф. 64</span>
+      <span><a href="privacy.html">Политика конфиденциальности</a></span>
+    </div>
+  </footer>
+</main>
+
+<script>
+document.querySelectorAll('.ba-frame').forEach(f=>{
+  const r=f.querySelector('input');
+  const set=()=>f.style.setProperty('--pos',r.value+'%');
+  r.addEventListener('input',set); set();
+});
+document.querySelectorAll('a[data-type]').forEach(a=>a.addEventListener('click',()=>{
+  document.getElementById('f-type').value=a.dataset.type;
+}));
+/* Отправка заявок.
+   SEND_URL — адрес send.php на хостинге с PHP (например https://vaganoh2.beget.tech/send.php).
+   Пока пусто, заявка не уходит автоматически: посетителю предлагается отправить её письмом,
+   позвонить или написать в ВК. */
+const SEND_URL='';
+const MAIL='vaganova426000@mail.ru';
+async function sendLead(subject,rows){
+  if(!SEND_URL) return false;
+  const fd=new FormData(); fd.append('subject',subject);
+  rows.forEach(([k,v])=>fd.append(k,v||''));
+  try{const r=await fetch(SEND_URL,{method:'POST',body:fd}); return r.ok}catch(e){return false}
+}
+function fallbackHTML(subject,rows){
+  const body=rows.map(([k,v])=>k+': '+(v||'—')).join('\n');
+  const href='mailto:'+MAIL+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+  return '<div class="ok-note"><span>Чтобы заявка точно дошла, отправьте её одним из способов:</span>'+
+    '<a href="'+href+'">Отправить письмом на '+MAIL+'</a>'+
+    '<a href="tel:+79124655961">Позвонить: +7 912 465-59-61</a>'+
+    '<a href="https://vk.me/chylkyt" target="_blank" rel="noopener">Написать в ВКонтакте</a></div>';
+}
+document.getElementById('order-form').addEventListener('submit',async e=>{
+  e.preventDefault();
+  const note=document.getElementById('form-note');
+  const phone=document.getElementById('f-phone').value.replace(/\D/g,'');
+  if(phone.length<10){note.textContent='Укажите телефон: не меньше 10 цифр.';return}
+  if(!document.getElementById('f-consent').checked){note.textContent='Отметьте согласие на обработку данных.';return}
+  const v=id=>document.getElementById(id).value;
+  const rows=[['Имя',v('f-name')],['Телефон',v('f-phone')],['Вид уборки',v('f-type')],['Площадь',v('f-area')],['Адрес',v('f-addr')],['Дата',v('f-date')]];
+  note.textContent='Отправляем…';
+  if(await sendLead('Заявка с сайта',rows)) note.textContent='Спасибо! Менеджер перезвонит в рабочее время, Пн–Пт с 9 до 17.';
+  else note.innerHTML=fallbackHTML('Заявка с сайта',rows);
+});
+
+/* квиз */
+(()=>{
+  const form=document.getElementById('quiz-form');
+  const steps=[...form.querySelectorAll('.q-step')], N=steps.length;
+  const back=document.getElementById('q-back'), next=document.getElementById('q-next');
+  const note=document.getElementById('q-note'), bar=document.getElementById('quiz-bar');
+  const count=document.getElementById('quiz-count'), map=[...document.querySelectorAll('#quiz-map li')];
+  const done=document.getElementById('q-done'), navEl=document.getElementById('quiz-nav');
+  let i=0;
+  const val=(n)=>[...form.querySelectorAll(`[name="${n}"]:checked`)].map(x=>x.value);
+  const valid=(k)=>{
+    if(k===0) return val('q-object').length?'':'Выберите объект.';
+    if(k===1) return val('q-type').length?'':'Отметьте хотя бы один вид уборки.';
+    if(k===2) return val('q-area').length?'':'Выберите площадь.';
+    if(k===3) return val('q-when').length?'':'Выберите срок.';
+    if(document.getElementById('q-phone').value.replace(/\D/g,'').length<10) return 'Укажите телефон: не меньше 10 цифр.';
+    if(!document.getElementById('q-consent').checked) return 'Отметьте согласие на обработку данных.';
+    return '';
+  };
+  function show(k){
+    i=k; note.textContent='';
+    steps.forEach((s,j)=>s.hidden=j!==k);
+    back.hidden=k===0;
+    next.textContent=k===N-1?'Получить расчёт':'Далее →';
+    count.textContent=`Шаг ${k+1} из ${N}`;
+    bar.style.width=((k+1)/N*100)+'%';
+    map.forEach((li,j)=>{li.classList.toggle('done',j<k);li.classList.toggle('cur',j===k)});
+  }
+  function go(d){
+    if(d>0){const e=valid(i); if(e){note.textContent=e;return}}
+    if(d>0&&i===N-1) return finish();
+    show(Math.max(0,Math.min(N-1,i+d)));
+    steps[i].querySelector('input')?.focus({preventScroll:true});
+  }
+  async function finish(){
+    const rows=[['Объект',val('q-object')[0]],['Уборка',val('q-type').join(', ')],['Площадь',val('q-area')[0]],
+      ['Сроки',val('q-when')[0]],['Связь',val('q-channel')[0]+', '+document.getElementById('q-phone').value]];
+    const lead=[['Имя',document.getElementById('q-name').value],['Телефон',document.getElementById('q-phone').value],
+      ['Компания',document.getElementById('q-company').value],...rows];
+    next.disabled=true; note.textContent='Отправляем…';
+    const sent=await sendLead('Заявка из квиза',lead);
+    next.disabled=false;
+    document.getElementById('q-done-title').textContent=sent?'Заявка принята':'Осталось отправить заявку';
+    document.getElementById('q-done-text').innerHTML=sent?'Менеджер свяжется с вами в рабочее время, Пн–Пт с 9 до 17.':fallbackHTML('Заявка из квиза',lead);
+    const dl=document.getElementById('q-summary'); dl.innerHTML='';
+    rows.forEach(([k,v])=>{const dt=document.createElement('dt');dt.textContent=k;const dd=document.createElement('dd');dd.textContent=v;dl.append(dt,dd)});
+    steps.forEach(s=>s.hidden=true); navEl.hidden=true; note.textContent=''; done.hidden=false;
+    count.textContent='Готово'; bar.style.width='100%';
+    map.forEach(li=>{li.classList.add('done');li.classList.remove('cur')});
+  }
+  back.addEventListener('click',()=>go(-1));
+  next.addEventListener('click',()=>go(1));
+  form.addEventListener('submit',e=>{e.preventDefault();go(1)});
+  form.addEventListener('change',e=>{
+    if(e.target.type==='radio'&&e.target.name!=='q-channel'&&i<N-1) setTimeout(()=>go(1),220);
+  });
+  document.getElementById('q-restart').addEventListener('click',()=>{
+    form.reset(); done.hidden=true; navEl.hidden=false; show(0);
+  });
+  show(0);
+})();
+
+document.querySelectorAll('.svc-cta').forEach(a=>a.addEventListener('click',()=>{
+  const t=a.dataset.qtype, o=a.dataset.obj;
+  if(t){const c=document.querySelector(`[name="q-type"][value="${t}"]`); if(c) c.checked=true;}
+  if(o){const r=document.querySelector(`[name="q-object"][value="${o}"]`); if(r&&!r.checked){r.checked=true;r.dispatchEvent(new Event('change',{bubbles:true}));}}
+}));
+
+document.getElementById('jobs-form').addEventListener('submit',e=>{
+  e.preventDefault();
+  const note=document.getElementById('j-note');
+  if(document.getElementById('j-phone').value.replace(/\D/g,'').length<10){note.textContent='Укажите телефон: не меньше 10 цифр.';return}
+  if(!document.getElementById('j-consent').checked){note.textContent='Отметьте согласие на обработку данных.';return}
+  note.textContent='Спасибо! Перезвоним в рабочее время.';
+});
+</script>
+</body>
+</html>
